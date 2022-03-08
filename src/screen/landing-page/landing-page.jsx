@@ -1,29 +1,23 @@
-import { Alert } from 'react-bootstrap';
-import ButtonBuatan from '../../component/button';
+import { Avatar } from '../../components/avatar';
+import { Card } from '../../components/card';
 import './landing-page.css';
 
 function AppKu() {
   return (
-    <>
-      <p>halo cek</p>
-      <div className="background">
-        <ButtonBuatan tittleButton="halo button" />
-        <ButtonBuatan tittleButton="halo helo" />
+    <div>
+      <Avatar imageAvatar="https://images.unsplash.com/photo-1644982652063-1a9b8d24f0f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+      <div className="layouting">
+        <Card
+          textCard="html"
+          avatarPicture="https://images.unsplash.com/photo-1644982652063-1a9b8d24f0f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          locationText="right"
+        />
+        <Card
+          textCard="css"
+          avatarPicture="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        />
       </div>
-      <Alert variant="success">
-        <Alert.Heading>Hey, nice to see you</Alert.Heading>
-        <p>
-          Aww yeah, you successfully read this important alert message. This
-          example text is going to run a bit longer so that you can see how
-          spacing within an alert works with this kind of content.
-        </p>
-        <hr />
-        <p className="mb-0">
-          Whenever you need to, be sure to use margin utilities to keep things
-          nice and tidy.
-        </p>
-      </Alert>
-    </>
+    </div>
   );
 }
 
